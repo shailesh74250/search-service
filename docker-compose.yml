@@ -38,14 +38,14 @@ services:
     depends_on:
       - elasticsearch
   
-  search-service:
-    build: ./search-service
-    container_name: search-service
-    ports:
-      - "3000:3000"
-    depends_on:
-      - kafka
-      - elasticsearch
-    environment:
-      - KAFKA_BROKER=kafka:9092
-      - ELASTICSEARCH_HOST=http://elasticsearch:9200
+  # search-service:
+  #   build: .
+  #   container_name: search-service
+  #   ports:
+  #     - "3000:3000"
+  #   depends_on:
+  #     - kafka
+  #     - elasticsearch
+  #   environment:
+  #     - KAFKA_BROKER=kafka:9092
+  #     - ELASTICSEARCH_HOST=http://elasticsearch:9200

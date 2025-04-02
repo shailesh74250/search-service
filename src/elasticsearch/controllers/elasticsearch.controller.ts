@@ -1,5 +1,5 @@
 import { Controller, Get, Post, Body, Param, Delete } from '@nestjs/common';
-import { ElasticsearchService } from './elasticsearch.service';
+import { ElasticsearchService } from '../services/elasticsearch.service';
 
 @Controller('search')
 export class ElasticsearchController {
